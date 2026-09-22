@@ -1,0 +1,4350 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>अभिषेक संजय चेंडके | लेखक • तत्त्वचिंतक • क्रिएटर</title>
+
+<meta name="description"
+content="अभिषेक संजय चेंडके यांची अधिकृत वेबसाइट — लेखक, तत्त्वचिंतक आणि डिजिटल क्रिएटर. पुस्तके, विचार, तत्त्वज्ञान, AI, लेख आणि प्रकल्प.">
+
+<style>
+
+:root{
+--black:#050507;
+--black2:#0b0810;
+--purple:#32145f;
+--purple2:#5b21b6;
+--violet:#7c3aed;
+--violet2:#9f67ff;
+
+--gold:#d4af6a;
+--gold2:#c6a15b;
+--gold3:#f1d99a;
+--gold4:#e5c76b;
+
+--ivory:#f7f2e7;
+--white:#ffffff;
+--gray:#aaa6b0;
+--gray2:#77727c;
+
+--line:rgba(212,175,106,.22);
+--purpleLine:rgba(124,58,237,.30);
+
+--card:rgba(255,255,255,.045);
+
+--shadow:0 25px 80px rgba(0,0,0,.55);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:
+Inter,
+system-ui,
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+sans-serif;
+
+background:
+radial-gradient(
+circle at 15% 15%,
+rgba(124,58,237,.18),
+transparent 28%
+),
+
+radial-gradient(
+circle at 85% 30%,
+rgba(91,33,182,.15),
+transparent 30%
+),
+
+radial-gradient(
+circle at 50% 85%,
+rgba(124,58,237,.08),
+transparent 30%
+),
+
+#050507;
+
+color:var(--ivory);
+
+line-height:1.7;
+
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+pointer-events:none;
+
+background-image:
+linear-gradient(
+rgba(255,255,255,.015) 1px,
+transparent 1px
+),
+
+linear-gradient(
+90deg,
+rgba(255,255,255,.015) 1px,
+transparent 1px
+);
+
+background-size:55px 55px;
+
+z-index:-2;
+}
+
+body::after{
+content:"";
+position:fixed;
+
+width:500px;
+height:500px;
+
+border-radius:50%;
+
+background:
+radial-gradient(
+circle,
+rgba(124,58,237,.12),
+transparent 70%
+);
+
+top:20%;
+left:40%;
+
+filter:blur(30px);
+
+animation:
+floatingGlow 12s ease-in-out infinite alternate;
+
+pointer-events:none;
+
+z-index:-1;
+}
+
+@keyframes floatingGlow{
+
+0%{
+transform:translate(-80px,-40px);
+}
+
+50%{
+transform:translate(80px,50px);
+}
+
+100%{
+transform:translate(-30px,100px);
+}
+
+}
+
+a{
+color:inherit;
+text-decoration:none;
+}
+
+button{
+font:inherit;
+}
+
+.container{
+width:min(1180px,92%);
+margin:auto;
+}
+
+section{
+position:relative;
+padding:110px 0;
+}
+
+section::before{
+content:"";
+
+position:absolute;
+
+top:0;
+left:50%;
+
+transform:translateX(-50%);
+
+width:80%;
+
+height:1px;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+rgba(124,58,237,.35),
+var(--gold),
+rgba(124,58,237,.35),
+transparent
+);
+}
+
+.gold{
+color:var(--gold3);
+}
+
+.muted{
+color:var(--gray);
+}
+
+.center{
+text-align:center;
+}
+
+
+/* =========================
+SCROLL PROGRESS
+========================= */
+
+#progress{
+position:fixed;
+
+top:0;
+left:0;
+
+height:3px;
+
+width:0;
+
+background:
+linear-gradient(
+90deg,
+var(--violet),
+var(--gold3),
+var(--violet2)
+);
+
+box-shadow:
+0 0 15px rgba(124,58,237,.7);
+
+z-index:99999;
+}
+
+
+/* =========================
+NAVBAR
+========================= */
+
+nav{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+
+z-index:9999;
+
+padding:14px 0;
+
+background:
+rgba(5,5,7,.78);
+
+backdrop-filter:blur(20px);
+
+border-bottom:
+1px solid rgba(124,58,237,.16);
+}
+
+.nav-inner{
+
+width:min(1220px,94%);
+
+margin:auto;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:20px;
+}
+
+.logo{
+
+width:48px;
+height:48px;
+
+display:grid;
+place-items:center;
+
+border-radius:15px;
+
+border:1px solid var(--gold);
+
+color:var(--gold3);
+
+font-weight:900;
+
+background:
+linear-gradient(
+145deg,
+#17101e,
+#08070a
+);
+
+box-shadow:
+
+0 0 20px rgba(124,58,237,.18),
+
+inset 0 0 20px rgba(212,175,106,.04);
+
+transition:.4s;
+}
+
+.logo:hover{
+
+transform:
+rotate(-5deg)
+scale(1.08);
+
+box-shadow:
+0 0 35px rgba(124,58,237,.35);
+}
+
+.nav-links{
+
+display:flex;
+
+align-items:center;
+
+gap:3px;
+}
+
+.nav-links a{
+
+font-size:11px;
+
+color:#c4bec9;
+
+padding:9px 9px;
+
+border-radius:9px;
+
+transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+
+color:var(--gold3);
+
+background:
+rgba(124,58,237,.10);
+
+box-shadow:
+inset 0 0 15px rgba(124,58,237,.05);
+}
+
+.lang{
+
+border:1px solid var(--gold);
+
+background:transparent;
+
+color:var(--gold3);
+
+border-radius:30px;
+
+padding:8px 15px;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.lang:hover{
+
+background:
+rgba(212,175,106,.08);
+
+box-shadow:
+0 0 20px rgba(212,175,106,.15);
+}
+
+.menu{
+
+display:none;
+
+border:0;
+
+background:transparent;
+
+color:var(--gold3);
+
+font-size:28px;
+
+cursor:pointer;
+}
+
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+
+min-height:100vh;
+
+display:grid;
+
+place-items:center;
+
+padding-top:120px;
+
+overflow:hidden;
+}
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:
+1.2fr .8fr;
+
+gap:70px;
+
+align-items:center;
+}
+
+.eyebrow{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+color:var(--gold3);
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+font-size:11px;
+
+margin-bottom:25px;
+}
+
+.eyebrow::before{
+
+content:"";
+
+width:38px;
+
+height:1px;
+
+background:
+linear-gradient(
+90deg,
+var(--violet),
+var(--gold)
+);
+}
+
+.hero h1{
+
+font-size:
+clamp(48px,7vw,92px);
+
+line-height:.98;
+
+letter-spacing:-4px;
+
+margin-bottom:24px;
+}
+
+.hero h1 span{
+
+background:
+linear-gradient(
+100deg,
+var(--gold3),
+#ffffff,
+var(--violet2),
+var(--gold)
+);
+
+-webkit-background-clip:text;
+
+background-clip:text;
+
+color:transparent;
+
+background-size:250% auto;
+
+animation:
+goldPurpleFlow 6s linear infinite;
+}
+
+@keyframes goldPurpleFlow{
+
+to{
+background-position:
+250% center;
+}
+
+}
+
+.hero-subtitle{
+
+font-size:18px;
+
+color:var(--gold3);
+
+margin-bottom:14px;
+}
+
+.hero-description{
+
+max-width:680px;
+
+font-size:18px;
+
+color:#b9b4be;
+}
+
+.hero-buttons{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:14px;
+
+margin-top:32px;
+}
+
+.btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:13px 23px;
+
+border-radius:12px;
+
+border:1px solid var(--gold);
+
+background:
+linear-gradient(
+110deg,
+var(--gold2),
+var(--gold4),
+var(--gold3)
+);
+
+color:#080709;
+
+font-weight:800;
+
+transition:.35s;
+
+box-shadow:
+0 8px 25px rgba(212,175,106,.08);
+}
+
+.btn:hover{
+
+transform:
+translateY(-5px);
+
+box-shadow:
+0 18px 40px rgba(124,58,237,.20);
+}
+
+.btn.outline{
+
+background:transparent;
+
+color:var(--gold3);
+
+border-color:
+rgba(124,58,237,.55);
+}
+
+.btn.outline:hover{
+
+background:
+rgba(124,58,237,.09);
+}
+
+
+/* HERO VISUAL */
+
+.hero-card{
+
+min-height:450px;
+
+border-radius:35px;
+
+border:
+1px solid rgba(124,58,237,.35);
+
+background:
+
+radial-gradient(
+circle at 50% 30%,
+rgba(124,58,237,.30),
+transparent 38%
+),
+
+linear-gradient(
+145deg,
+rgba(255,255,255,.06),
+rgba(255,255,255,.012)
+);
+
+display:grid;
+
+place-items:center;
+
+position:relative;
+
+overflow:hidden;
+
+box-shadow:
+var(--shadow);
+}
+
+.hero-card::before{
+
+content:"";
+
+position:absolute;
+
+inset:20px;
+
+border-radius:28px;
+
+border:
+1px solid rgba(212,175,106,.12);
+
+animation:
+pulseBorder 4s ease-in-out infinite;
+}
+
+@keyframes pulseBorder{
+
+50%{
+border-color:
+rgba(212,175,106,.35);
+}
+}
+
+.monogram{
+
+width:230px;
+
+height:230px;
+
+border-radius:50%;
+
+display:grid;
+
+place-items:center;
+
+font-size:78px;
+
+font-weight:900;
+
+color:var(--gold3);
+
+border:
+1px solid var(--gold);
+
+box-shadow:
+
+0 0 0 14px
+rgba(212,175,106,.025),
+
+0 0 90px
+rgba(124,58,237,.35);
+
+animation:
+monogramFloat 5s ease-in-out infinite;
+}
+
+@keyframes monogramFloat{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-14px);
+}
+
+}
+
+.orbit{
+
+position:absolute;
+
+width:340px;
+
+height:340px;
+
+border:
+1px dashed rgba(212,175,106,.22);
+
+border-radius:50%;
+
+animation:
+spin 18s linear infinite;
+}
+
+.orbit::after{
+
+content:"";
+
+position:absolute;
+
+width:10px;
+
+height:10px;
+
+border-radius:50%;
+
+background:var(--gold3);
+
+box-shadow:
+0 0 25px var(--gold3);
+
+top:25px;
+
+left:45px;
+}
+
+.orbit2{
+
+position:absolute;
+
+width:410px;
+
+height:410px;
+
+border:
+1px solid rgba(124,58,237,.12);
+
+border-radius:50%;
+
+animation:
+spinReverse 25s linear infinite;
+}
+
+@keyframes spin{
+
+to{
+transform:rotate(360deg);
+}
+
+}
+
+@keyframes spinReverse{
+
+to{
+transform:rotate(-360deg);
+}
+
+}
+
+
+/* =========================
+SECTION HEADER
+========================= */
+
+.section-head{
+
+max-width:780px;
+
+margin:
+0 auto 55px;
+
+text-align:center;
+}
+
+.section-icon{
+
+width:56px;
+
+height:56px;
+
+margin:
+0 auto 18px;
+
+display:grid;
+
+place-items:center;
+
+border:
+1px solid var(--gold);
+
+border-radius:17px;
+
+color:var(--gold3);
+
+background:
+rgba(124,58,237,.08);
+
+box-shadow:
+0 0 25px rgba(124,58,237,.10);
+
+animation:
+iconFloat 4s ease-in-out infinite;
+}
+
+@keyframes iconFloat{
+
+50%{
+transform:translateY(-5px);
+}
+}
+
+.section-head h2{
+
+font-size:
+clamp(34px,5vw,56px);
+
+line-height:1.05;
+
+margin-bottom:14px;
+}
+
+.section-head h2 span{
+
+color:var(--gold3);
+}
+
+.section-head p{
+
+color:var(--gray);
+}
+
+
+/* =========================
+CARDS
+========================= */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:22px;
+}
+
+.card{
+
+position:relative;
+
+overflow:hidden;
+
+padding:28px;
+
+border-radius:23px;
+
+border:
+1px solid rgba(124,58,237,.20);
+
+background:
+
+linear-gradient(
+145deg,
+rgba(255,255,255,.055),
+rgba(124,58,237,.025)
+);
+
+transition:
+transform .45s,
+border-color .45s,
+box-shadow .45s;
+}
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+width:160px;
+
+height:160px;
+
+border-radius:50%;
+
+right:-90px;
+
+top:-90px;
+
+background:
+radial-gradient(
+circle,
+rgba(124,58,237,.18),
+transparent 70%
+);
+}
+
+.card:hover{
+
+transform:
+translateY(-9px);
+
+border-color:
+rgba(212,175,106,.45);
+
+box-shadow:
+0 25px 55px rgba(0,0,0,.40),
+0 0 35px rgba(124,58,237,.07);
+}
+
+.card-icon{
+
+width:46px;
+
+height:46px;
+
+display:grid;
+
+place-items:center;
+
+border-radius:14px;
+
+background:
+rgba(124,58,237,.09);
+
+border:
+1px solid rgba(212,175,106,.20);
+
+color:var(--gold3);
+
+margin-bottom:18px;
+}
+
+.card h3{
+
+margin-bottom:8px;
+}
+
+.card p{
+
+font-size:14px;
+
+color:#aaa6b0;
+}
+
+
+/* =========================
+ABOUT
+========================= */
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:.75fr 1.25fr;
+
+gap:35px;
+}
+
+.profile-box{
+
+min-height:470px;
+
+padding:35px;
+
+border-radius:30px;
+
+border:
+1px solid rgba(124,58,237,.30);
+
+background:
+
+radial-gradient(
+circle at 25% 20%,
+rgba(124,58,237,.28),
+transparent 38%
+),
+
+linear-gradient(
+145deg,
+#120c18,
+#070709
+);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:flex-end;
+
+position:relative;
+
+overflow:hidden;
+}
+
+.profile-box::before{
+
+content:"";
+
+position:absolute;
+
+width:260px;
+
+height:260px;
+
+border-radius:50%;
+
+border:
+1px solid rgba(212,175,106,.13);
+
+top:50px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+box-shadow:
+0 0 80px rgba(124,58,237,.15);
+}
+
+.profile-symbol{
+
+font-size:110px;
+
+font-weight:900;
+
+color:var(--gold3);
+
+opacity:.85;
+
+margin-bottom:auto;
+}
+
+.profile-box h2{
+
+font-size:28px;
+}
+
+.about-text{
+
+padding-left:35px;
+
+border-left:
+1px solid rgba(124,58,237,.25);
+}
+
+.about-text p{
+
+color:#bbb6c0;
+
+margin-bottom:20px;
+}
+
+
+/* =========================
+FAMILY
+========================= */
+
+.family{
+
+grid-template-columns:
+repeat(3,1fr);
+}
+
+.family .card{
+
+min-height:170px;
+}
+
+.relation{
+
+font-size:11px;
+
+letter-spacing:1.5px;
+
+text-transform:uppercase;
+
+color:var(--gold3);
+}
+
+
+/* =========================
+BOOKS
+========================= */
+
+.books{
+
+grid-template-columns:
+repeat(3,1fr);
+}
+
+.book{
+
+perspective:1000px;
+}
+
+.book-inner{
+
+min-height:530px;
+
+padding:30px;
+
+border-radius:25px;
+
+border:
+1px solid var(--gold);
+
+background:
+
+linear-gradient(
+145deg,
+#24152f,
+#09070c 75%
+);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:space-between;
+
+transform-style:preserve-3d;
+
+transition:.55s;
+
+position:relative;
+
+overflow:hidden;
+}
+
+.book-inner::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:
+linear-gradient(
+120deg,
+transparent 35%,
+rgba(255,255,255,.10),
+transparent 65%
+);
+
+transform:
+translateX(-120%);
+
+transition:1s;
+}
+
+.book:hover .book-inner::before{
+
+transform:
+translateX(120%);
+}
+
+.book:hover .book-inner{
+
+transform:
+rotateY(-6deg)
+rotateX(3deg)
+translateY(-10px);
+
+box-shadow:
+0 30px 80px rgba(124,58,237,.22);
+}
+
+.book-logo{
+
+width:52px;
+
+height:52px;
+
+border-radius:50%;
+
+display:grid;
+
+place-items:center;
+
+border:
+1px solid var(--gold);
+
+color:var(--gold3);
+
+font-weight:900;
+}
+
+.book-number{
+
+font-size:72px;
+
+font-weight:900;
+
+line-height:1;
+
+color:
+rgba(124,58,237,.28);
+}
+
+.book h3{
+
+font-size:29px;
+
+line-height:1.15;
+
+margin:10px 0;
+}
+
+.book p{
+
+color:#aaa6b0;
+
+font-size:14px;
+}
+
+.book .buy{
+
+width:100%;
+
+margin-top:20px;
+}
+
+
+/* =========================
+THOUGHTS
+========================= */
+
+.thoughts{
+
+grid-template-columns:
+repeat(2,1fr);
+}
+
+.thought{
+
+padding:24px;
+
+border-left:
+2px solid var(--gold);
+
+background:
+rgba(124,58,237,.035);
+
+border-radius:
+0 15px 15px 0;
+
+transition:.35s;
+}
+
+.thought:hover{
+
+transform:
+translateX(7px);
+
+background:
+rgba(124,58,237,.08);
+}
+
+.thought strong{
+
+color:var(--gold3);
+
+margin-right:7px;
+}
+
+
+/* =========================
+AI
+========================= */
+
+.ai-wrap{
+
+padding:40px;
+
+border-radius:32px;
+
+border:
+1px solid rgba(124,58,237,.45);
+
+background:
+
+radial-gradient(
+circle at 75% 20%,
+rgba(124,58,237,.24),
+transparent 35%
+),
+
+linear-gradient(
+145deg,
+#12091b,
+#07070a
+);
+
+box-shadow:
+0 30px 80px rgba(0,0,0,.35);
+}
+
+.ai-top{
+
+display:grid;
+
+grid-template-columns:
+1fr .8fr;
+
+gap:45px;
+
+align-items:center;
+}
+
+.ai-top h3{
+
+font-size:
+clamp(32px,4vw,50px);
+
+line-height:1.1;
+
+margin-bottom:15px;
+}
+
+.ai-top p{
+
+color:#aaa6b0;
+}
+
+.neural{
+
+min-height:290px;
+
+display:grid;
+
+place-items:center;
+}
+
+.neural svg{
+
+width:100%;
+
+max-width:420px;
+}
+
+.neural-line{
+
+stroke:
+rgba(212,175,106,.38);
+
+stroke-width:1.3;
+
+stroke-dasharray:5 5;
+
+animation:
+dashMove 3s linear infinite;
+}
+
+@keyframes dashMove{
+
+to{
+stroke-dashoffset:-30;
+}
+}
+
+.node{
+
+fill:var(--gold3);
+
+filter:
+drop-shadow(
+0 0 8px
+rgba(241,217,154,.9)
+);
+}
+
+.ai-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:15px;
+
+margin-top:35px;
+}
+
+.ai-card{
+
+padding:23px;
+
+border-radius:19px;
+
+border:
+1px solid rgba(124,58,237,.30);
+
+background:
+rgba(124,58,237,.055);
+
+transition:.35s;
+}
+
+.ai-card:hover{
+
+transform:
+translateY(-6px);
+
+border-color:
+rgba(212,175,106,.35);
+}
+
+.ai-card h4{
+
+color:var(--gold3);
+
+margin-bottom:8px;
+}
+
+.ai-card p{
+
+font-size:13px;
+
+color:#9f9aa5;
+}
+
+
+/* =========================
+SKILLS
+========================= */
+
+.skill{
+
+margin-bottom:24px;
+}
+
+.skill-head{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-bottom:8px;
+
+color:#ddd8df;
+}
+
+.skill-line{
+
+height:7px;
+
+border-radius:20px;
+
+overflow:hidden;
+
+background:#201d24;
+}
+
+.skill-line span{
+
+display:block;
+
+height:100%;
+
+width:0;
+
+border-radius:20px;
+
+background:
+
+linear-gradient(
+90deg,
+var(--violet),
+var(--gold3)
+);
+
+box-shadow:
+0 0 12px rgba(124,58,237,.4);
+
+transition:
+width 1.6s ease;
+}
+
+
+/* =========================
+TIMELINE
+========================= */
+
+.timeline{
+
+max-width:850px;
+
+margin:auto;
+
+position:relative;
+}
+
+.timeline::before{
+
+content:"";
+
+position:absolute;
+
+left:18px;
+
+top:0;
+
+bottom:0;
+
+width:1px;
+
+background:
+linear-gradient(
+var(--gold),
+var(--violet),
+transparent
+);
+}
+
+.timeline-item{
+
+position:relative;
+
+padding:
+0 0 48px 60px;
+}
+
+.timeline-dot{
+
+position:absolute;
+
+left:10px;
+
+top:5px;
+
+width:17px;
+
+height:17px;
+
+border:
+2px solid var(--gold);
+
+border-radius:50%;
+
+background:var(--black);
+
+box-shadow:
+0 0 18px rgba(124,58,237,.45);
+}
+
+.timeline-item h3{
+
+color:var(--gold3);
+
+margin-bottom:5px;
+}
+
+.timeline-item p{
+
+color:var(--gray);
+}
+
+
+/* =========================
+GALLERY
+========================= */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:18px;
+}
+
+.gallery-item{
+
+min-height:280px;
+
+border-radius:22px;
+
+overflow:hidden;
+
+border:
+1px solid rgba(124,58,237,.25);
+
+background:#0d0a10;
+
+position:relative;
+}
+
+.gallery-item img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.7s;
+}
+
+.gallery-item:hover img{
+
+transform:
+scale(1.08);
+}
+
+.gallery-placeholder{
+
+height:100%;
+
+display:grid;
+
+place-items:center;
+
+padding:30px;
+
+text-align:center;
+
+color:var(--gray);
+}
+
+
+/* =========================
+CONTACT
+========================= */
+
+.contact-box{
+
+max-width:850px;
+
+margin:auto;
+
+padding:50px;
+
+text-align:center;
+
+border-radius:30px;
+
+border:
+1px solid rgba(124,58,237,.35);
+
+background:
+
+radial-gradient(
+circle at 50% 0%,
+rgba(124,58,237,.18),
+transparent 45%
+),
+
+rgba(255,255,255,.025);
+
+box-shadow:
+var(--shadow);
+}
+
+.email{
+
+display:inline-block;
+
+font-size:
+clamp(18px,3vw,28px);
+
+color:var(--gold3);
+
+margin:22px 0;
+
+word-break:break-word;
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+
+padding:45px 0;
+
+border-top:
+1px solid rgba(124,58,237,.20);
+
+background:#030304;
+}
+
+.footer-grid{
+
+display:flex;
+
+justify-content:space-between;
+
+gap:20px;
+
+flex-wrap:wrap;
+}
+
+footer p{
+
+font-size:13px;
+
+color:var(--gray2);
+}
+
+
+/* =========================
+BACK TO TOP
+========================= */
+
+.top{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+width:46px;
+
+height:46px;
+
+border-radius:50%;
+
+border:
+1px solid var(--gold);
+
+background:#0b0810;
+
+color:var(--gold3);
+
+cursor:pointer;
+
+opacity:0;
+
+pointer-events:none;
+
+transition:.35s;
+
+z-index:900;
+}
+
+.top.show{
+
+opacity:1;
+
+pointer-events:auto;
+
+animation:
+topBounce .7s ease;
+}
+
+@keyframes topBounce{
+
+50%{
+transform:translateY(-7px);
+}
+}
+
+
+/* =========================
+REVEAL ANIMATION
+========================= */
+
+.reveal{
+
+opacity:0;
+
+transform:
+translateY(40px)
+scale(.98);
+
+transition:
+opacity .8s ease,
+transform .8s ease;
+}
+
+.reveal.show{
+
+opacity:1;
+
+transform:
+translateY(0)
+scale(1);
+}
+
+
+/* =========================
+LANGUAGE
+========================= */
+
+.mr{
+display:block;
+}
+
+.en{
+display:none;
+}
+
+body.english .mr{
+display:none;
+}
+
+body.english .en{
+display:block;
+}
+
+body.english span.en,
+body.english a.en{
+display:inline;
+}
+
+body.english .hero-buttons .en{
+display:inline-flex;
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:1050px){
+
+.nav-links{
+
+position:absolute;
+
+top:76px;
+
+left:4%;
+
+width:92%;
+
+display:none;
+
+flex-direction:column;
+
+padding:15px;
+
+border-radius:20px;
+
+border:
+1px solid rgba(124,58,237,.30);
+
+background:
+rgba(6,5,8,.97);
+
+backdrop-filter:blur(20px);
+}
+
+.nav-links.open{
+display:flex;
+}
+
+.nav-links a{
+
+text-align:center;
+
+padding:12px;
+}
+
+.menu{
+display:block;
+}
+
+.hero-grid,
+.about-grid,
+.ai-top{
+
+grid-template-columns:1fr;
+}
+
+.about-text{
+
+padding-left:0;
+
+border-left:0;
+}
+
+.grid,
+.family,
+.books{
+
+grid-template-columns:
+repeat(2,1fr);
+}
+
+.ai-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+}
+
+}
+
+
+/* MOBILE SMALL */
+
+@media(max-width:650px){
+
+section{
+padding:80px 0;
+}
+
+.hero h1{
+
+font-size:
+clamp(45px,14vw,68px);
+
+letter-spacing:-2px;
+}
+
+.hero-description{
+font-size:16px;
+}
+
+.hero-card{
+min-height:350px;
+}
+
+.monogram{
+
+width:175px;
+height:175px;
+
+font-size:56px;
+}
+
+.orbit{
+
+width:260px;
+height:260px;
+}
+
+.orbit2{
+
+width:315px;
+height:315px;
+}
+
+.grid,
+.family,
+.books,
+.thoughts,
+.gallery,
+.ai-grid{
+
+grid-template-columns:1fr;
+}
+
+.card{
+padding:23px;
+}
+
+.book-inner{
+min-height:450px;
+}
+
+.ai-wrap{
+padding:25px 20px;
+}
+
+.contact-box{
+padding:32px 20px;
+}
+
+.footer-grid{
+flex-direction:column;
+}
+
+}
+
+
+/* =========================
+REDUCED MOTION
+========================= */
+
+@media(prefers-reduced-motion:reduce){
+
+*{
+animation:none!important;
+transition:none!important;
+scroll-behavior:auto!important;
+}
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div id="progress"></div>
+
+
+<!-- =========================
+NAVBAR
+========================= -->
+
+<nav>
+
+<div class="nav-inner">
+
+<a href="#home" class="logo">
+AC
+</a>
+
+<div class="nav-links" id="navLinks">
+
+<a href="#home">होम</a>
+<a href="#about">माझ्याबद्दल</a>
+<a href="#family">कुटुंब</a>
+<a href="#books">पुस्तके</a>
+<a href="#thoughts">विचार</a>
+<a href="#philosophy">तत्त्वज्ञान</a>
+<a href="#journey">प्रवास</a>
+<a href="#articles">लेख</a>
+<a href="#projects">प्रकल्प</a>
+<a href="#ai">AI Skills</a>
+<a href="#skills">कौशल्ये</a>
+<a href="#education">शिक्षण</a>
+<a href="#achievements">उपलब्धी</a>
+<a href="#reflections">चिंतन</a>
+<a href="#gallery">गॅलरी</a>
+<a href="#services">सेवा</a>
+<a href="#press">प्रेस</a>
+<a href="#contact">संपर्क</a>
+
+</div>
+
+<button class="lang" id="langBtn">
+English
+</button>
+
+<button class="menu" id="menuBtn">
+☰
+</button>
+
+</div>
+
+</nav>
+
+
+<!-- =========================
+HOME
+========================= -->
+
+<section id="home" class="hero">
+
+<div class="container hero-grid">
+
+<div class="reveal">
+
+<div class="eyebrow">
+अधिकृत लेखक वेबसाइट
+</div>
+
+<h1>
+
+अभिषेक<br>
+
+<span>
+संजय चेंडके
+</span>
+
+</h1>
+
+<div class="hero-subtitle">
+
+लेखक • तत्त्वचिंतक • क्रिएटर
+
+</div>
+
+<p class="hero-description">
+
+विचार, तत्त्वज्ञान, अस्तित्व, सत्य,
+आत्मशोध आणि तंत्रज्ञानाच्या संगमातून
+स्वतःला आणि जगाला समजून घेण्याचा प्रयत्न.
+
+</p>
+
+<div class="hero-buttons">
+
+<a class="btn" href="#books">
+माझी पुस्तके
+</a>
+
+<a class="btn outline" href="#about">
+माझ्याबद्दल जाणून घ्या
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-card reveal">
+
+<div class="orbit"></div>
+
+<div class="orbit2"></div>
+
+<div class="monogram">
+AC
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+ABOUT
+========================= -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+✦
+</div>
+
+<h2>
+माझ्याबद्दल
+<span>थोडे अधिक</span>
+</h2>
+
+<p>
+लेखक म्हणून माझ्या विचारांचा,
+शिकण्याचा आणि निर्माण करण्याचा प्रवास.
+</p>
+
+</div>
+
+
+<div class="about-grid">
+
+
+<div class="profile-box reveal">
+
+<div class="profile-symbol">
+AC
+</div>
+
+<h2>
+अभिषेक संजय चेंडके
+</h2>
+
+<p class="gold">
+लेखक • तत्त्वचिंतक • क्रिएटर
+</p>
+
+<p class="muted">
+मुळेगाव, सोलापूर, महाराष्ट्र, भारत
+</p>
+
+</div>
+
+
+<div class="about-text reveal">
+
+<p>
+
+मी अभिषेक संजय चेंडके —
+मुळेगाव, सोलापूर, महाराष्ट्र येथील लेखक,
+तत्त्वज्ञानाचा अभ्यासक आणि डिजिटल क्रिएटर आहे.
+
+</p>
+
+<p>
+
+माझ्या लेखनाची सुरुवात जीवन,
+अस्तित्व, विचार, सत्य आणि माणूस
+या विषयांबद्दलच्या कुतूहलातून झाली.
+
+</p>
+
+<p>
+
+माझ्यासाठी लेखन म्हणजे फक्त कथा किंवा
+माहिती मांडण्याचे माध्यम नाही.
+लेखन हा प्रश्न विचारण्याचा,
+स्वतःकडे पाहण्याचा आणि विचारांना
+नवीन दिशा देण्याचा एक मार्ग आहे.
+
+</p>
+
+<p>
+
+माझ्या पुस्तकांमध्ये मानवी विचारविश्व,
+अस्तित्व, अज्ञाताचा शोध,
+आत्मचिंतन आणि स्वतःची अधिक चांगली
+आवृत्ती बनण्याचा प्रवास यांचा शोध आहे.
+
+</p>
+
+<p>
+
+लेखनासोबतच मला तंत्रज्ञान,
+वेब डेव्हलपमेंट आणि Artificial Intelligence
+यामध्येही रस आहे.
+
+</p>
+
+<p>
+
+AI आणि आधुनिक तंत्रज्ञानाचा उपयोग
+शिकण्यासाठी, कल्पना विकसित करण्यासाठी,
+लेखनासाठी आणि डिजिटल प्रकल्प तयार
+करण्यासाठी कसा करता येईल,
+याचा मी सतत अभ्यास करत आहे.
+
+</p>
+
+<p>
+
+माझ्यासाठी शिक्षण म्हणजे फक्त पदवी नाही.
+काहीतरी नवीन शिकणे, प्रयोग करणे,
+चुका समजून घेणे आणि पुन्हा प्रयत्न करणे
+हा देखील शिक्षणाचाच भाग आहे.
+
+</p>
+
+<p>
+
+माझा मुख्य विश्वास असा आहे की
+<strong class="gold">
+कुतूहल जिवंत असेल तर शिकण्याचा प्रवास कधीच थांबत नाही.
+</strong>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+FAMILY
+========================= -->
+
+<section id="family">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+◇
+</div>
+
+<h2>
+माझे
+<span>कुटुंब</span>
+</h2>
+
+<p>
+माझ्या जीवनप्रवासाचा महत्त्वाचा भाग असलेली माझी कुटुंबीय नाती.
+</p>
+
+</div>
+
+
+<div class="grid family">
+
+
+<div class="card reveal">
+<div class="card-icon">01</div>
+<h3>
+Sanjay Aapasaheb Chendake
+</h3>
+<div class="relation">
+वडील
+</div>
+</div>
+
+
+<div class="card reveal">
+<div class="card-icon">02</div>
+<h3>
+Kavita Sanjay Chendake
+</h3>
+<div class="relation">
+आई
+</div>
+</div>
+
+
+<div class="card reveal">
+<div class="card-icon">03</div>
+<h3>
+Aapasaheb Sidram Chendake
+</h3>
+<div class="relation">
+आजोबा
+</div>
+</div>
+
+
+<div class="card reveal">
+<div class="card-icon">04</div>
+<h3>
+Shakuntala Aapasaheb Chendake
+</h3>
+<div class="relation">
+आजी
+</div>
+</div>
+
+
+<div class="card reveal">
+<div class="card-icon">05</div>
+<h3>
+Sidheshwar Aapasaheb Chendake
+</h3>
+<div class="relation">
+काका
+</div>
+</div>
+
+
+<div class="card reveal">
+<div class="card-icon">06</div>
+<h3>
+Sujata Sidheshwar Chendake
+</h3>
+<div class="relation">
+काकू
+</div>
+</div>
+
+
+<div class="card reveal">
+<div class="card-icon">07</div>
+<h3>
+Aarti Sanjay Chendake
+</h3>
+<div class="relation">
+बहीण
+</div>
+</div>
+
+
+<div class="card reveal">
+<div class="card-icon">08</div>
+<h3>
+Samarth Sidheshwar Chendake
+</h3>
+<div class="relation">
+भाऊ
+</div>
+</div>
+
+
+<div class="card reveal">
+<div class="card-icon">09</div>
+<h3>
+Shivprasadh Sidheshwar Chendake
+</h3>
+<div class="relation">
+धाकटा भाऊ
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+BOOKS
+========================= -->
+
+<section id="books">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+▱
+</div>
+
+<h2>
+माझी
+<span>पुस्तके</span>
+</h2>
+
+<p>
+विचार, अज्ञाताचा शोध आणि आत्मपरिवर्तन यांवर आधारित माझी पुस्तके.
+</p>
+
+</div>
+
+
+<div class="grid books">
+
+
+<div class="book reveal">
+
+<div class="book-inner">
+
+<div>
+
+<div class="book-logo">
+01
+</div>
+
+<div class="book-number">
+01
+</div>
+
+<h3>
+The Ocean of Thoughts
+</h3>
+
+<p>
+विचारांच्या महासागरातून मानवी मन,
+जीवन आणि अस्तित्वातील प्रश्नांचा
+तत्त्वज्ञानात्मक शोध.
+</p>
+
+</div>
+
+<a
+class="btn"
+target="_blank"
+href="https://www.amazon.com/dp/B0HK2W5YZ8">
+
+पुस्तक पहा / खरेदी करा
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="book reveal">
+
+<div class="book-inner">
+
+<div>
+
+<div class="book-logo">
+02
+</div>
+
+<div class="book-number">
+02
+</div>
+
+<h3>
+अज्ञाताचा शोध
+</h3>
+
+<p>
+अस्तित्व आणि सत्याचा प्रवास —
+ज्ञाताच्या पलीकडे असलेल्या प्रश्नांचा
+आणि अज्ञाताच्या शोधाचा प्रवास.
+</p>
+
+</div>
+
+<a
+class="btn"
+target="_blank"
+href="https://amzn.in/d/0gwNUv69">
+
+पुस्तक पहा / खरेदी करा
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="book reveal">
+
+<div class="book-inner">
+
+<div>
+
+<div class="book-logo">
+03
+</div>
+
+<div class="book-number">
+03
+</div>
+
+<h3>
+The Better Version of You
+</h3>
+
+<p>
+स्वतःकडे नव्या दृष्टीने पाहण्याचा,
+आत्मचिंतनाचा आणि स्वतःची अधिक
+चांगली आवृत्ती बनण्याचा प्रवास.
+</p>
+
+</div>
+
+<a
+class="btn"
+target="_blank"
+href="https://a.co/d/05Ynxzvd">
+
+पुस्तक पहा / खरेदी करा
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+THOUGHTS
+========================= -->
+
+<section id="thoughts">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+✦
+</div>
+
+<h2>
+माझे
+<span>५० विचार</span>
+</h2>
+
+<p>
+जीवन, विचार, सत्य आणि आत्मशोधावरील चिंतन.
+</p>
+
+</div>
+
+
+<div class="thoughts grid">
+
+
+<div class="thought reveal"><strong>01.</strong> प्रत्येक उत्तरापेक्षा योग्य प्रश्न कधी कधी अधिक मौल्यवान असतो.</div>
+
+<div class="thought reveal"><strong>02.</strong> जीवनाला प्रश्न विचारायला सुरुवात केली की जीवन वेगळ्या पद्धतीने समजू लागते.</div>
+
+<div class="thought reveal"><strong>03.</strong> शांतता अनेकदा असे विचार दाखवते जे आवाजात लपून जातात.</div>
+
+<div class="thought reveal"><strong>04.</strong> कुतूहल जिवंत असेल तर ज्ञानाचा प्रवास थांबत नाही.</div>
+
+<div class="thought reveal"><strong>05.</strong> सत्य कठीण असले तरी त्याची किंमत कमी होत नाही.</div>
+
+<div class="thought reveal"><strong>06.</strong> प्रत्येक विचार आपल्या जीवनाला एक छोटी दिशा देतो.</div>
+
+<div class="thought reveal"><strong>07.</strong> मन कधी कैदखाना असते तर कधी नवीन दार.</div>
+
+<div class="thought reveal"><strong>08.</strong> स्वतःला समजून घेणे हा आयुष्यभर चालणारा प्रवास आहे.</div>
+
+<div class="thought reveal"><strong>09.</strong> अनिश्चितता अनेकदा शोधाची सुरुवात असते.</div>
+
+<div class="thought reveal"><strong>10.</strong> आरामदायी जागेच्या बाहेर पडल्यावर वाढ सुरू होते.</div>
+
+<div class="thought reveal"><strong>11.</strong> एक वेगळा दृष्टिकोन संपूर्ण निष्कर्ष बदलू शकतो.</div>
+
+<div class="thought reveal"><strong>12.</strong> अनेकदा आपण बाहेर शोधत असलेली उत्तरे आपल्या आत सुरू झालेली असतात.</div>
+
+<div class="thought reveal"><strong>13.</strong> कुतूहल मनाला कायम तरुण ठेवते.</div>
+
+<div class="thought reveal"><strong>14.</strong> प्रत्येक अनुभव आपल्या मागे काहीतरी शिकवण ठेवतो.</div>
+
+<div class="thought reveal"><strong>15.</strong> अज्ञात म्हणजे नेहमी भीती असावी असे नाही.</div>
+
+<div class="thought reveal"><strong>16.</strong> खोल विचार करणे आणि सतत विचार करत राहणे यात फरक आहे.</div>
+
+<div class="thought reveal"><strong>17.</strong> आपल्या गृहितकांमुळे आपण जगाकडे पाहण्याची पद्धत ठरते.</div>
+
+<div class="thought reveal"><strong>18.</strong> आत्मजाणीव ही अर्थपूर्ण बदलाची सुरुवात आहे.</div>
+
+<div class="thought reveal"><strong>19.</strong> वेळ परिस्थिती बदलतो; चिंतन समज बदलते.</div>
+
+<div class="thought reveal"><strong>20.</strong> शांत मन शक्यता अधिक स्पष्टपणे पाहू शकते.</div>
+
+<div class="thought reveal"><strong>21.</strong> प्रत्येक प्रश्नाला त्वरित उत्तराची गरज नसते.</div>
+
+<div class="thought reveal"><strong>22.</strong> योग्य दिशेने नेणारी शंका उपयोगी असते.</div>
+
+<div class="thought reveal"><strong>23.</strong> खात्रीपेक्षा कुतूहल शिकण्याची सुरुवात करते.</div>
+
+<div class="thought reveal"><strong>24.</strong> भूतकाळ आपल्याला समजावू शकतो; पण तो आपल्याला पूर्णपणे ठरवत नाही.</div>
+
+<div class="thought reveal"><strong>25.</strong> छोटे बदल वेगळी दिशा निर्माण करू शकतात.</div>
+
+<div class="thought reveal"><strong>26.</strong> आपण कसे विचार करतो याचा परिणाम आपण कसे जगतो यावर होतो.</div>
+
+<div class="thought reveal"><strong>27.</strong> चिंतन अनुभवाचे ज्ञानात रूपांतर करते.</div>
+
+<div class="thought reveal"><strong>28.</strong> स्वातंत्र्याची सुरुवात जागरूकतेपासून होते.</div>
+
+<div class="thought reveal"><strong>29.</strong> अर्थाचा शोध प्रत्येकासाठी वैयक्तिक असतो.</div>
+
+<div class="thought reveal"><strong>30.</strong> चांगला प्रश्न चांगली दिशा निर्माण करू शकतो.</div>
+
+<div class="thought reveal"><strong>31.</strong> तंत्रज्ञान साधने बदलते; कुतूहल शक्यता बदलते.</div>
+
+<div class="thought reveal"><strong>32.</strong> कुतूहल आणि संयम एकत्र आले की सर्जनशीलता वाढते.</div>
+
+<div class="thought reveal"><strong>33.</strong> अपयशाकडे प्रामाणिकपणे पाहिले तर ते माहिती बनू शकते.</div>
+
+<div class="thought reveal"><strong>34.</strong> आजचे निर्णय उद्याच्या दिशेवर परिणाम करतात.</div>
+
+<div class="thought reveal"><strong>35.</strong> समजून घेण्यासाठी न्याय करण्यापेक्षा अधिक वेळ लागतो.</div>
+
+<div class="thought reveal"><strong>36.</strong> खोल समज आल्यानंतर साधेपणा दिसू लागतो.</div>
+
+<div class="thought reveal"><strong>37.</strong> प्रत्येक व्यक्तीच्या आत एक अदृश्य जग असते.</div>
+
+<div class="thought reveal"><strong>38.</strong> प्रश्न ज्ञात आणि अज्ञात यांना जोडतात.</div>
+
+<div class="thought reveal"><strong>39.</strong> विचारशील जीवन म्हणजे स्वतःशी चालणारा संवाद.</div>
+
+<div class="thought reveal"><strong>40.</strong> प्रगती नेहमी बाहेरून दिसतेच असे नाही.</div>
+
+<div class="thought reveal"><strong>41.</strong> आपले लक्ष हे आपल्या मौल्यवान संसाधनांपैकी एक आहे.</div>
+
+<div class="thought reveal"><strong>42.</strong> नवीन गोष्ट शिकल्यावर आपण नवीन गोष्टी पाहू लागतो.</div>
+
+<div class="thought reveal"><strong>43.</strong> मनाला कल्पनाशक्ती आणि शिस्त दोन्ही आवश्यक असतात.</div>
+
+<div class="thought reveal"><strong>44.</strong> सत्याची पुनरावृत्ती करण्यापेक्षा त्याचे परीक्षण करणे महत्त्वाचे आहे.</div>
+
+<div class="thought reveal"><strong>45.</strong> प्रत्येक प्रवास त्या प्रवास करणाऱ्या व्यक्तीला बदलतो.</div>
+
+<div class="thought reveal"><strong>46.</strong> अर्थपूर्ण जीवनात काही अनुत्तरित प्रश्न असू शकतात.</div>
+
+<div class="thought reveal"><strong>47.</strong> स्वतःमध्ये सुधारणा करण्याची सुरुवात प्रामाणिक निरीक्षणापासून होते.</div>
+
+<div class="thought reveal"><strong>48.</strong> भीतीचे रूपांतर कुतूहलात झाले की अज्ञात मनोरंजक वाटू शकते.</div>
+
+<div class="thought reveal"><strong>49.</strong> निर्माण करणे म्हणजे स्वतःला समजून घेण्याचा एक मार्ग आहे.</div>
+
+<div class="thought reveal"><strong>50.</strong> शिकत रहा, प्रश्न विचारत रहा आणि निर्माण करत रहा.</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PHILOSOPHY
+========================= -->
+
+<section id="philosophy">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+◈
+</div>
+
+<h2>
+माझे
+<span>तत्त्वज्ञान</span>
+</h2>
+
+<p>
+ज्या प्रश्नांचा मी सतत शोध घेत आहे.
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="card reveal">
+<div class="card-icon">?</div>
+<h3>अस्तित्व</h3>
+<p>
+आपण अस्तित्वात असणे म्हणजे नेमके काय?
+जगात आपल्या अस्तित्वाचे स्थान काय?
+</p>
+</div>
+
+
+<div class="card reveal">
+<div class="card-icon">∞</div>
+<h3>सत्य</h3>
+<p>
+आपण ज्याला सत्य म्हणतो ते अनुभव,
+ज्ञान आणि दृष्टिकोनातून कसे तयार होते?
+</p>
+</div>
+
+
+<div class="card reveal">
+<div class="card-icon">◌</div>
+<h3>स्वतः</h3>
+<p>
+नावे, भूमिका, आठवणी आणि अपेक्षांपलीकडे
+आपण नेमके कोण आहोत?
+</p>
+</div>
+
+
+<div class="card reveal">
+<div class="card-icon">✧</div>
+<h3>अज्ञात</h3>
+<p>
+अज्ञात म्हणजे भीती नव्हे;
+ते कुतूहल आणि शोधासाठीची जागा असू शकते.
+</p>
+</div>
+
+
+<div class="card reveal">
+<div class="card-icon">↗</div>
+<h3>विकास</h3>
+<p>
+स्वतःची चांगली आवृत्ती बनणे ही अंतिम अवस्था नसून सतत चालणारी प्रक्रिया आहे.
+</p>
+</div>
+
+
+<div class="card reveal">
+<div class="card-icon">○</div>
+<h3>अर्थ</h3>
+<p>
+आपण अनुभवतो, समजतो आणि निर्माण करतो
+त्यातून जीवनाचा अर्थ तयार होऊ शकतो.
+</p>
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+JOURNEY
+========================= -->
+
+<section id="journey">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+↗
+</div>
+
+<h2>
+माझा
+<span>प्रवास</span>
+</h2>
+
+<p>
+कुतूहलापासून लेखनापर्यंत आणि लेखनापासून डिजिटल निर्मितीपर्यंत.
+</p>
+
+</div>
+
+
+<div class="timeline">
+
+
+<div class="timeline-item reveal">
+
+<div class="timeline-dot"></div>
+
+<h3>
+कुतूहलाची सुरुवात
+</h3>
+
+<p>
+जीवन, माणूस, विचार आणि जग यांच्याबद्दल प्रश्न निर्माण होत गेले आणि त्यातून तत्त्वज्ञानाची आवड वाढत गेली.
+</p>
+
+</div>
+
+
+<div class="timeline-item reveal">
+
+<div class="timeline-dot"></div>
+
+<h3>
+लेखन
+</h3>
+
+<p>
+विचारांना शब्द देण्यासाठी आणि प्रश्नांचा अधिक खोलवर अभ्यास करण्यासाठी लेखन माझे माध्यम बनले.
+</p>
+
+</div>
+
+
+<div class="timeline-item reveal">
+
+<div class="timeline-dot"></div>
+
+<h3>
+पुस्तकांचा प्रवास
+</h3>
+
+<p>
+विचारांचा महासागर, अज्ञाताचा शोध आणि The Better Version of You या पुस्तकांमधून माझ्या विचारांचा विस्तार झाला.
+</p>
+
+</div>
+
+
+<div class="timeline-item reveal">
+
+<div class="timeline-dot"></div>
+
+<h3>
+तंत्रज्ञानाकडे वाटचाल
+</h3>
+
+<p>
+वेब डेव्हलपमेंट, डिजिटल प्रकल्प आणि AI यांचा अभ्यास करत स्वतः काहीतरी तयार करण्याचा प्रयत्न सुरू झाला.
+</p>
+
+</div>
+
+
+<div class="timeline-item reveal">
+
+<div class="timeline-dot"></div>
+
+<h3>
+सतत शिकण्याचा प्रवास
+</h3>
+
+<p>
+लेखन, तंत्रज्ञान, AI आणि नवीन कल्पना यांचा अभ्यास करत हा प्रवास अजूनही सुरू आहे.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+ARTICLES
+========================= -->
+
+<section id="articles">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+▤
+</div>
+
+<h2>
+माझे
+<span>लेख</span>
+</h2>
+
+<p>
+तत्त्वज्ञान, विचार, जीवन आणि आधुनिक तंत्रज्ञानावरील लेखन.
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="card reveal">
+
+<div class="card-icon">
+01
+</div>
+
+<h3>
+अर्थाच्या शोधात
+</h3>
+
+<p>
+मानव आपल्या अनुभवांमध्ये अर्थ का शोधत राहतो,
+याचा तत्त्वज्ञानात्मक विचार.
+</p>
+
+</div>
+
+
+<div class="card reveal">
+
+<div class="card-icon">
+02
+</div>
+
+<h3>
+विचारांचे स्वरूप
+</h3>
+
+<p>
+विचार आपल्या निर्णयांवर आणि जगाकडे पाहण्याच्या दृष्टिकोनावर कसा परिणाम करतात?
+</p>
+
+</div>
+
+
+<div class="card reveal">
+
+<div class="card-icon">
+03
+</div>
+
+<h3>
+प्रश्नांसोबत जगणे
+</h3>
+
+<p>
+सर्व प्रश्नांची उत्तरे मिळणे आवश्यक आहे का?
+अनुत्तरित प्रश्नांचे महत्त्व काय?
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PROJECTS
+========================= -->
+
+<section id="projects">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+⌘
+</div>
+
+<h2>
+माझे
+<span>प्रकल्प</span>
+</h2>
+
+<p>
+तंत्रज्ञान आणि सर्जनशीलतेतून तयार केलेले डिजिटल प्रयोग.
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="card reveal">
+
+<div class="card-icon">
+01
+</div>
+
+<h3>
+लेखक वेबसाइट
+</h3>
+
+<p>
+माझी पुस्तके, विचार, तत्त्वज्ञान,
+लेख, प्रकल्प आणि डिजिटल ओळख
+एकाच ठिकाणी आणणारी वेबसाइट.
+</p>
+
+</div>
+
+
+<div class="card reveal">
+
+<div class="card-icon">
+02
+</div>
+
+<h3>
+डिजिटल प्रकल्प
+</h3>
+
+<p>
+वेब डेव्हलपमेंट शिकताना तयार केलेले
+लहान आणि practical digital projects.
+</p>
+
+</div>
+
+
+<div class="card reveal">
+
+<div class="card-icon">
+03
+</div>
+
+<h3>
+AI प्रयोग
+</h3>
+
+<p>
+Artificial Intelligence चा वापर
+शिकणे, लेखन, कल्पना आणि डिजिटल
+कामासाठी कसा करता येईल याचा अभ्यास.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+AI
+========================= -->
+
+<section id="ai">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+AI
+</div>
+
+<h2>
+Artificial
+<span>Intelligence</span>
+</h2>
+
+<p>
+AI कडे केवळ technology म्हणून नव्हे,
+तर learning आणि creation tool म्हणून पाहण्याचा प्रयत्न.
+</p>
+
+</div>
+
+
+<div class="ai-wrap reveal">
+
+<div class="ai-top">
+
+<div>
+
+<h3>
+मानवी <span class="gold">कुतूहल</span> × AI
+</h3>
+
+<p>
+
+Artificial Intelligence चा वापर
+research, writing, brainstorming,
+coding, learning, automation आणि
+creative workflows साठी कसा करता येईल
+याचा मी अभ्यास करत आहे.
+
+</p>
+
+<br>
+
+<p>
+
+माझ्यासाठी AI म्हणजे मानवी विचारांची
+जागा घेणारे साधन नसून,
+मानवी कल्पना आणि शिकण्याच्या
+प्रक्रियेला मदत करणारे साधन आहे.
+
+</p>
+
+</div>
+
+
+<div class="neural">
+
+<svg viewBox="0 0 400 280">
+
+<line class="neural-line"
+x1="60" y1="70"
+x2="190" y2="55"/>
+
+<line class="neural-line"
+x1="60" y1="70"
+x2="190" y2="140"/>
+
+<line class="neural-line"
+x1="60" y1="210"
+x2="190" y2="140"/>
+
+<line class="neural-line"
+x1="60" y1="210"
+x2="190" y2="220"/>
+
+<line class="neural-line"
+x1="190" y1="55"
+x2="330" y2="100"/>
+
+<line class="neural-line"
+x1="190" y1="140"
+x2="330" y2="100"/>
+
+<line class="neural-line"
+x1="190" y1="140"
+x2="330" y2="190"/>
+
+<line class="neural-line"
+x1="190" y1="220"
+x2="330" y2="190"/>
+
+<circle class="node"
+cx="60" cy="70" r="7"/>
+
+<circle class="node"
+cx="60" cy="210" r="7"/>
+
+<circle class="node"
+cx="190" cy="55" r="7"/>
+
+<circle class="node"
+cx="190" cy="140" r="11"/>
+
+<circle class="node"
+cx="190" cy="220" r="7"/>
+
+<circle class="node"
+cx="330" cy="100" r="8"/>
+
+<circle class="node"
+cx="330" cy="190" r="8"/>
+
+</svg>
+
+</div>
+
+</div>
+
+
+<div class="ai-grid">
+
+
+<div class="ai-card">
+
+<h4>
+Prompt Engineering
+</h4>
+
+<p>
+AI कडून अधिक स्पष्ट आणि उपयोगी
+उत्तर मिळण्यासाठी योग्य prompts
+आणि workflows तयार करण्याचा अभ्यास.
+</p>
+
+</div>
+
+
+<div class="ai-card">
+
+<h4>
+AI Research
+</h4>
+
+<p>
+विषय समजून घेणे,
+कल्पना organize करणे आणि
+research workflow जलद करणे.
+</p>
+
+</div>
+
+
+<div class="ai-card">
+
+<h4>
+AI + Writing
+</h4>
+
+<p>
+Brainstorming, editing,
+content planning आणि
+writing workflows मध्ये AI चा वापर.
+</p>
+
+</div>
+
+
+<div class="ai-card">
+
+<h4>
+AI + Coding
+</h4>
+
+<p>
+Web development शिकताना
+AI ला learning companion म्हणून वापरणे.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+SKILLS
+========================= -->
+
+<section id="skills">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+✦
+</div>
+
+<h2>
+माझी
+<span>कौशल्ये</span>
+</h2>
+
+<p>
+प्रात्यक्षिक काम आणि सततच्या learning मधून विकसित होणारी कौशल्ये.
+</p>
+
+</div>
+
+
+<div style="max-width:850px;margin:auto">
+
+
+<div class="skill reveal">
+
+<div class="skill-head">
+<span>लेखन</span>
+<span>Focus</span>
+</div>
+
+<div class="skill-line">
+<span data-width="92%"></span>
+</div>
+
+</div>
+
+
+<div class="skill reveal">
+
+<div class="skill-head">
+<span>तत्त्वज्ञानात्मक विचार</span>
+<span>Focus</span>
+</div>
+
+<div class="skill-line">
+<span data-width="88%"></span>
+</div>
+
+</div>
+
+
+<div class="skill reveal">
+
+<div class="skill-head">
+<span>Web Development</span>
+<span>Learning</span>
+</div>
+
+<div class="skill-line">
+<span data-width="78%"></span>
+</div>
+
+</div>
+
+
+<div class="skill reveal">
+
+<div class="skill-head">
+<span>Artificial Intelligence</span>
+<span>Learning</span>
+</div>
+
+<div class="skill-line">
+<span data-width="75%"></span>
+</div>
+
+</div>
+
+
+<div class="skill reveal">
+
+<div class="skill-head">
+<span>Creative Research</span>
+<span>Focus</span>
+</div>
+
+<div class="skill-line">
+<span data-width="84%"></span>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+EDUCATION
+========================= -->
+
+<section id="education">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+⌘
+</div>
+
+<h2>
+शिक्षण
+<span>आणि Learning</span>
+</h2>
+
+<p>
+औपचारिक शिक्षणासोबत self-learning आणि practical experience.
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="card reveal">
+
+<div class="card-icon">
+01
+</div>
+
+<h3>
+Higher Secondary Education
+</h3>
+
+<p>
+DBF College of Arts and Science, Solapur
+<br>
+<span class="gold">
+12th Science
+</span>
+</p>
+
+</div>
+
+
+<div class="card reveal">
+
+<div class="card-icon">
+02
+</div>
+
+<h3>
+Engineering Studies
+</h3>
+
+<p>
+N. K. Orchid, Solapur
+<br>
+<span class="gold">
+First Year Mechanical Engineering
+</span>
+</p>
+
+</div>
+
+
+<div class="card reveal">
+
+<div class="card-icon">
+03
+</div>
+
+<h3>
+Self Learning
+</h3>
+
+<p>
+Books, online resources,
+AI tools, web development,
+technology आणि practical projects.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+ACHIEVEMENTS
+========================= -->
+
+<section id="achievements">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+◇
+</div>
+
+<h2>
+माझ्या
+<span>उपलब्धी</span>
+</h2>
+
+<p>
+लेखन, डिजिटल निर्मिती आणि सतत शिकण्यातील महत्त्वाचे टप्पे.
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="card reveal center">
+
+<h2 class="gold">
+03
+</h2>
+
+<h3>
+प्रकाशित पुस्तके
+</h3>
+
+</div>
+
+
+<div class="card reveal center">
+
+<h2 class="gold">
+01
+</h2>
+
+<h3>
+Personal Author Website
+</h3>
+
+</div>
+
+
+<div class="card reveal center">
+
+<h2 class="gold">
+∞
+</h2>
+
+<h3>
+Continuous Learning
+</h3>
+
+</div>
+
+
+<div class="card reveal center">
+
+<h2 class="gold">
++
+</h2>
+
+<h3>
+Digital Projects
+</h3>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+REFLECTIONS
+========================= -->
+
+<section id="reflections">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+◌
+</div>
+
+<h2>
+माझे
+<span>चिंतन</span>
+</h2>
+
+<p>
+लेखन, तंत्रज्ञान आणि जीवन यांना जोडणारे काही विचार.
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="card reveal">
+
+<h3>
+शिका
+</h3>
+
+<p>
+प्रत्येक नवीन कौशल्य नवीन शक्यता उघडते.
+</p>
+
+</div>
+
+
+<div class="card reveal">
+
+<h3>
+प्रश्न विचारा
+</h3>
+
+<p>
+प्रश्न अधिक खोल समजून घेण्याची दिशा निर्माण करतात.
+</p>
+
+</div>
+
+
+<div class="card reveal">
+
+<h3>
+निर्माण करा
+</h3>
+
+<p>
+कल्पनांना प्रत्यक्ष रूप देणे म्हणजे विचारांना अनुभवामध्ये बदलणे.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+GALLERY
+========================= -->
+
+<section id="gallery">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+▣
+</div>
+
+<h2>
+माझी
+<span>गॅलरी</span>
+</h2>
+
+<p>
+लेखन, पुस्तके आणि माझ्या डिजिटल प्रवासाशी संबंधित निवडक चित्रे.
+</p>
+
+</div>
+
+
+<div class="gallery">
+
+
+<div class="gallery-item reveal">
+
+<img
+src="Profile.jpg"
+alt="Abhishek Chendake"
+onerror="
+this.style.display='none';
+this.nextElementSibling.style.display='grid';
+">
+
+<div
+class="gallery-placeholder"
+style="display:none">
+
+<span>
+
+<strong class="gold">
+Profile.jpg
+</strong>
+
+<br><br>
+
+तुमचा actual फोटो
+या नावाने upload करा.
+
+</span>
+
+</div>
+
+</div>
+
+
+<div class="gallery-item reveal">
+
+<div class="gallery-placeholder">
+
+<span>
+
+<strong class="gold">
+BOOKS
+</strong>
+
+<br><br>
+
+माझ्या पुस्तकांचे फोटो
+येथे add करता येतील.
+
+</span>
+
+</div>
+
+</div>
+
+
+<div class="gallery-item reveal">
+
+<div class="gallery-placeholder">
+
+<span>
+
+<strong class="gold">
+CREATION
+</strong>
+
+<br><br>
+
+लेखन • तत्त्वज्ञान • Technology • AI
+
+</span>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+SERVICES
+========================= -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
++
+</div>
+
+<h2>
+माझी
+<span>क्षेत्रे</span>
+</h2>
+
+<p>
+माझ्या कामाशी संबंधित creative आणि digital क्षेत्रे.
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="card reveal">
+
+<div class="card-icon">
+✎
+</div>
+
+<h3>
+Writing
+</h3>
+
+<p>
+तत्त्वज्ञानात्मक लेखन,
+विचार आणि long-form content.
+</p>
+
+</div>
+
+
+<div class="card reveal">
+
+<div class="card-icon">
+⌘
+</div>
+
+<h3>
+Web Projects
+</h3>
+
+<p>
+Practical learning मधून
+creative websites आणि digital projects.
+</p>
+
+</div>
+
+
+<div class="card reveal">
+
+<div class="card-icon">
+AI
+</div>
+
+<h3>
+AI Workflows
+</h3>
+
+<p>
+AI-assisted research,
+writing, learning आणि productivity.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PRESS
+========================= -->
+
+<section id="press">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+P
+</div>
+
+<h2>
+<span>Press</span> & Media
+</h2>
+
+<p>
+भविष्यातील interviews, features आणि media mentions साठी जागा.
+</p>
+
+</div>
+
+
+<div
+class="card reveal center"
+style="max-width:850px;margin:auto">
+
+<h3>
+Media & Author Features
+</h3>
+
+<p style="margin:14px 0 22px">
+
+पुस्तक, लेख, interview,
+author feature किंवा collaboration
+साठी संपर्क करा.
+
+</p>
+
+<a
+class="btn"
+href="#contact">
+
+संपर्क करा
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+CONTACT
+========================= -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-icon">
+@
+</div>
+
+<h2>
+<span>संपर्क</span>
+</h2>
+
+<p>
+पुस्तके, लेख, collaboration आणि इतर चौकशीसाठी.
+</p>
+
+</div>
+
+
+<div class="contact-box reveal">
+
+<h2>
+अभिषेक संजय चेंडके
+</h2>
+
+<p class="gold">
+लेखक • तत्त्वचिंतक • क्रिएटर
+</p>
+
+<a
+class="email"
+href="mailto:abhishekchendake23@gmail.com">
+
+abhishekchendake23@gmail.com
+
+</a>
+
+<p class="muted">
+
+मुळेगाव, सोलापूर,
+महाराष्ट्र, भारत
+
+</p>
+
+<div style="margin-top:25px">
+
+<a
+class="btn"
+href="mailto:abhishekchendake23@gmail.com">
+
+ई-मेल पाठवा
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<strong class="gold">
+AC
+</strong>
+
+<p>
+अभिषेक संजय चेंडके
+</p>
+
+</div>
+
+<p>
+© 2026 Abhishek Sanjay Chendake.
+All rights reserved.
+</p>
+
+</div>
+
+</footer>
+
+
+<!-- BACK TO TOP -->
+
+<button
+class="top"
+id="topBtn">
+
+↑
+
+</button>
+
+
+<script>
+
+/* =========================
+MOBILE MENU
+========================= */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const navLinks =
+document.getElementById("navLinks");
+
+menuBtn.addEventListener(
+"click",
+()=>{
+navLinks.classList.toggle("open");
+}
+);
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(link=>{
+
+link.addEventListener(
+"click",
+()=>{
+navLinks.classList.remove("open");
+}
+);
+
+});
+
+
+/* =========================
+ENGLISH / MARATHI
+========================= */
+
+const langBtn =
+document.getElementById("langBtn");
+
+langBtn.addEventListener(
+"click",
+()=>{
+
+document.body.classList.toggle("english");
+
+if(
+document.body.classList.contains("english")
+){
+
+langBtn.textContent="मराठी";
+
+document.documentElement.lang="en";
+
+}else{
+
+langBtn.textContent="English";
+
+document.documentElement.lang="mr";
+
+}
+
+}
+);
+
+
+/* =========================
+SCROLL PROGRESS
+========================= */
+
+window.addEventListener(
+"scroll",
+()=>{
+
+const h =
+document.documentElement;
+
+const scroll =
+h.scrollTop /
+(h.scrollHeight-h.clientHeight)
+*100;
+
+document
+.getElementById("progress")
+.style.width=
+scroll+"%";
+
+}
+);
+
+
+/* =========================
+REVEAL
+========================= */
+
+const observer =
+new IntersectionObserver(
+(entries)=>{
+
+entries.forEach(
+entry=>{
+
+if(
+entry.isIntersecting
+){
+
+entry.target
+.classList
+.add("show");
+
+
+entry.target
+.querySelectorAll(
+".skill-line span"
+)
+.forEach(bar=>{
+
+bar.style.width =
+bar.dataset.width;
+
+});
+
+}
+
+}
+);
+
+},
+{
+threshold:.12
+}
+);
+
+
+document
+.querySelectorAll(".reveal")
+.forEach(
+el=>observer.observe(el)
+);
+
+
+/* =========================
+TOP BUTTON
+========================= */
+
+const topBtn =
+document.getElementById("topBtn");
+
+window.addEventListener(
+"scroll",
+()=>{
+
+if(window.scrollY>500){
+
+topBtn.classList.add("show");
+
+}else{
+
+topBtn.classList.remove("show");
+
+}
+
+}
+);
+
+topBtn.addEventListener(
+"click",
+()=>{
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+);
+
+
+/* =========================
+ACTIVE NAV
+========================= */
+
+const sections =
+document.querySelectorAll(
+"section[id]"
+);
+
+const links =
+document.querySelectorAll(
+".nav-links a"
+);
+
+window.addEventListener(
+"scroll",
+()=>{
+
+let current="";
+
+sections.forEach(
+section=>{
+
+const top =
+section.offsetTop-160;
+
+if(
+window.scrollY>=top
+){
+
+current =
+section.id;
+
+}
+
+}
+);
+
+links.forEach(
+link=>{
+
+link.classList.toggle(
+"active",
+link.getAttribute("href")
+==="#"+current
+);
+
+});
+
+}
+);
+
+
+/* =========================
+BOOK 3D TILT
+========================= */
+
+document
+.querySelectorAll(".book")
+.forEach(book=>{
+
+const inner =
+book.querySelector(".book-inner");
+
+book.addEventListener(
+"mousemove",
+e=>{
+
+if(
+window.innerWidth<700
+)return;
+
+const rect =
+book.getBoundingClientRect();
+
+const x =
+(e.clientX-rect.left)/
+rect.width-.5;
+
+const y =
+(e.clientY-rect.top)/
+rect.height-.5;
+
+inner.style.transform =
+`rotateY(${x*8}deg)
+rotateX(${-y*6}deg)
+translateY(-8px)`;
+
+}
+);
+
+book.addEventListener(
+"mouseleave",
+()=>{
+
+inner.style.transform="";
+
+}
+);
+
+});
+
+
+/* =========================
+STAGGER
+========================= */
+
+document
+.querySelectorAll(".grid")
+.forEach(grid=>{
+
+[
+...grid.children
+]
+.forEach(
+(child,index)=>{
+
+child.style.transitionDelay =
+(index*60)+"ms";
+
+}
+);
+
+});
+
+
+/* =========================
+AI NODE PULSE
+========================= */
+
+const nodes =
+document.querySelectorAll(".node");
+
+setInterval(
+()=>{
+
+nodes.forEach(
+(node,index)=>{
+
+setTimeout(
+()=>{
+
+node.style.opacity =
+".35";
+
+setTimeout(
+()=>{
+
+node.style.opacity="1";
+
+},
+300
+);
+
+},
+index*120
+);
+
+}
+);
+
+},
+2400
+);
+
+</script>
+
+</body>
+</html>
